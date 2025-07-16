@@ -1,0 +1,836 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main nav {
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+}
+main nav .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main nav .container .menu i {
+  font-size: 2rem;
+  font-weight: 100;
+}
+main nav .container .menu .navlinks {
+  display: none;
+  align-items: center;
+  font-size: 0.8rem;
+  gap: 2rem;
+  text-transform: uppercase;
+}
+main nav .container .menu .navlinks .pages {
+  display: flex;
+  align-items: center;
+}
+main nav .container .menu .navlinks .pages .pageOpen {
+  font-size: 1rem;
+}
+main nav .container .menu .navlinks button {
+  background-color: black;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 1rem;
+}
+main .section1 {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+main .section1 .image {
+  width: 100%;
+}
+main .section1 .image img {
+  width: 100%;
+}
+main .section1 .text {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+main .section1 .text p {
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+}
+main .section2 {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .section2 .image {
+  width: 100%;
+}
+main .section2 .image img {
+  width: 100%;
+}
+main .section2 .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .section2 .text h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 1;
+}
+main .section2 .text p {
+  font-size: 1.2rem;
+  word-spacing: 0.2rem;
+}
+main .section2 .text .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .section2 .text .container .blocks {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .section2 .text .container .blocks p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+main .section2 .text .container .blocks .right {
+  text-align: right;
+}
+main .section2 .text .container hr {
+  width: 100%;
+  background-color: black;
+  padding-top: 1px;
+  border: none;
+}
+main .section3 {
+  width: 100%;
+  padding: 2rem;
+}
+main .section3 .image {
+  width: 100%;
+}
+main .section3 .image img {
+  width: 100%;
+}
+main .section3 .container {
+  padding-top: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+main .section3 .container .v-text {
+  writing-mode: vertical-lr;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+main .section3 .container .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .section3 .container .text h2 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+}
+main .section3 .container .text p {
+  color: rgb(133, 133, 133);
+  font-size: 1.3rem;
+  letter-spacing: 1.5;
+  line-height: 1.4;
+}
+main .section4 {
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .section4 .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .section4 .container h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.4rem;
+}
+main .section4 .container .image {
+  width: 100%;
+}
+main .section4 .container .image img {
+  width: 100%;
+}
+main .section4 .container .box-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main .section4 .container .box-container hr {
+  width: 100%;
+  background-color: black;
+  padding-top: 1px;
+  border: none;
+}
+main .section4 .container .box-container .box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+main .section4 .container .box-container .box h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+main .section4 .container .box-container .box p {
+  font-size: 1.2rem;
+  color: gray;
+}
+main .section4 .container .box-container .box span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main .section4 .container .box-container .box span .arrow-btn {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  background-color: black;
+}
+main .section4 .container .box-container .box span p {
+  color: black;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+main .section5 {
+  width: 100%;
+  padding: 2rem;
+}
+main .section5 h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.4rem;
+}
+main .section5 .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .section5 .container .first,
+main .section5 .container .second {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .section5 .container .first .image1,
+main .section5 .container .first .image2,
+main .section5 .container .second .image1,
+main .section5 .container .second .image2 {
+  width: 100%;
+}
+main .section5 .container .first .image1 img,
+main .section5 .container .first .image2 img,
+main .section5 .container .second .image1 img,
+main .section5 .container .second .image2 img {
+  width: 100%;
+}
+main .section5 .container .first .image2,
+main .section5 .container .second .image2 {
+  display: none;
+}
+main .section5 .container .first .textbox,
+main .section5 .container .second .textbox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .section5 .container .first .textbox .top,
+main .section5 .container .second .textbox .top {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .section5 .container .first .textbox .top h2,
+main .section5 .container .second .textbox .top h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+main .section5 .container .first .textbox .top p,
+main .section5 .container .second .textbox .top p {
+  font-size: 1.2rem;
+  color: gray;
+}
+main .section5 .container .first .textbox span,
+main .section5 .container .second .textbox span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main .section5 .container .first .textbox span .arrow-btn,
+main .section5 .container .second .textbox span .arrow-btn {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  background-color: black;
+}
+main .section5 .container .first .textbox span p,
+main .section5 .container .second .textbox span p {
+  color: black;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+main .section6 {
+  padding: 2rem;
+  width: 100%;
+}
+main .section6 h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-size: 6rem;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.4rem;
+}
+main .section6 .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .section6 .container .blocks {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .section6 .container .blocks .left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .section6 .container .blocks p {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+main .section6 .container .blocks .brand {
+  font-size: 1.5rem;
+  font-size: 600;
+}
+main .section6 .container hr {
+  width: 100%;
+  background-color: rgba(107, 106, 106, 0.452);
+  padding-top: 1px;
+  border: none;
+}
+main .section7 {
+  width: 100%;
+}
+main .section7 hr {
+  width: 100%;
+  background-color: rgba(107, 106, 106, 0.452);
+  padding-top: 1px;
+  border: none;
+}
+main .section7 .container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .section7 .container .top {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .section7 .container .top .left h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 400;
+}
+main .section7 .container .top .right p {
+  word-spacing: 0.5rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+main .section7 .container .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .section7 .container .bottom .card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .section7 .container .bottom .card h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+main .section7 .container .bottom .card .image {
+  width: 100%;
+}
+main .section7 .container .bottom .card .image img {
+  width: 100%;
+}
+main .section7 .container .bottom .card span {
+  display: flex;
+  justify-content: space-between;
+}
+main .section7 .container .bottom .card span p {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.712);
+}
+main .section7 .container .bottom .card span .icon i {
+  color: rgba(0, 0, 0, 0.712);
+  font-size: 1rem;
+}
+main .section7 .container .bottom .card p {
+  color: gray;
+  font-size: 1.2rem;
+  word-spacing: 0.45rem;
+}
+main .section8 {
+  width: 100%;
+  padding: 2rem;
+}
+main .section8 .wrapper .box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .section8 .wrapper .box h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+main .section8 .wrapper .box p {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+main .section8 .wrapper .box span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main .section8 .wrapper .box span .arrow-btn {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  background-color: black;
+}
+main .section8 .wrapper .box span p {
+  color: black;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+main .section9 {
+  padding: 2rem;
+  background-color: rgb(17, 17, 17);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  gap: 1rem;
+}
+main .section9 h1 {
+  font-weight: 200;
+  font-size: 3rem;
+}
+main .section9 h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+main .section9 button {
+  font-size: 1rem;
+  word-spacing: 0.5rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  border: none;
+}
+main footer hr {
+  height: 0.5px;
+  background-color: rgb(56, 55, 55);
+  border: none;
+}
+main footer .wrapper {
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(17, 17, 17);
+  color: white;
+  gap: 4rem;
+}
+main footer .wrapper .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main footer .wrapper .container .blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main footer .wrapper .icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
+}
+main footer .wrapper .icons i {
+  width: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 1rem;
+  color: black;
+  text-transform: capitalize;
+  background-color: white;
+  border-radius: 1rem;
+}
+main footer .wrapper .terms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+main footer .wrapper .terms p {
+  text-align: center;
+}
+main footer .wrapper .terms span {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  main .section1,
+  main .section2,
+  main nav {
+    padding: 2rem 4rem;
+  }
+  main .section1 .container .menu .icon,
+  main .section2 .container .menu .icon,
+  main nav .container .menu .icon {
+    display: none;
+  }
+  main .section1 .container .menu .navlinks,
+  main .section2 .container .menu .navlinks,
+  main nav .container .menu .navlinks {
+    display: flex;
+  }
+  main section.section2 {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  main section.section2 .text {
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+  }
+  main section.section2 .text h1 {
+    font-size: 4.8rem;
+    letter-spacing: normal;
+    line-height: 0.9;
+  }
+  main section.section2 .text p {
+    width: 90%;
+    font-size: 1.6rem;
+    word-spacing: 0.5rem;
+    line-height: 1.2;
+  }
+  main section.section2 .text .container hr {
+    background-color: rgba(0, 0, 0, 0.336);
+  }
+  main section.section2 .image {
+    width: 50%;
+    overflow: hidden;
+  }
+  main section.section2 .image img {
+    scale: 1.3;
+  }
+  main .section3 {
+    width: 100%;
+    display: flex;
+    padding: 2rem 4rem;
+    gap: 3rem;
+  }
+  main .section3 .image {
+    width: 30%;
+    overflow: hidden;
+  }
+  main .section3 .image img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transform: scale(1.2);
+  }
+  main .section3 .container {
+    width: 70%;
+    flex-direction: row-reverse;
+  }
+  main .section3 .container .v-text {
+    width: 15%;
+    display: flex;
+    align-items: flex-end;
+    font-size: 0.8rem;
+    font-weight: 500;
+    word-spacing: 0.5rem;
+  }
+  main .section3 .container .text {
+    width: 85%;
+  }
+  main .section3 .container .text h2 {
+    font-size: 6rem;
+  }
+  main .section3 .container .text p {
+    font-size: 1.2rem;
+    word-spacing: 0.2rem;
+  }
+  main .section4 {
+    padding: 2rem 4rem;
+  }
+  main .section4 .container {
+    flex-direction: row;
+  }
+  main .section4 .container h1 {
+    font-size: 6.5rem;
+  }
+  main .section4 .container .image {
+    width: 45%;
+  }
+  main .section4 .container .image img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .section4 .container .box-container {
+    flex-direction: row;
+    width: 55%;
+    flex-wrap: wrap;
+  }
+  main .section4 .container .box-container .box {
+    width: 45%;
+  }
+  main .section5 {
+    padding: 2rem 4rem;
+  }
+  main .section5 h1 {
+    font-size: 9.95rem;
+  }
+  main .section5 .container .first,
+  main .section5 .container .second {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main .section5 .container .first .image1,
+  main .section5 .container .first .image2,
+  main .section5 .container .first .textbox,
+  main .section5 .container .second .image1,
+  main .section5 .container .second .image2,
+  main .section5 .container .second .textbox {
+    width: 30%;
+  }
+  main .section5 .container .first .textbox,
+  main .section5 .container .second .textbox {
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  main .section5 .container .first .textbox .top h2,
+  main .section5 .container .second .textbox .top h2 {
+    font-size: 4.4rem;
+    font-weight: 400;
+  }
+  main .section5 .container .first .image2,
+  main .section5 .container .second .image2 {
+    display: block;
+  }
+  main .section5 .container .second {
+    flex-direction: row-reverse;
+  }
+  main .section6 h1 {
+    text-align: right;
+  }
+  main .section6 .wrapper {
+    display: flex;
+    width: 100%;
+  }
+  main .section6 .wrapper .empty {
+    width: 35%;
+  }
+  main .section6 .wrapper .container {
+    width: 65%;
+  }
+  main .section6 .wrapper .container .blocks {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main .section6 .wrapper .container .blocks .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+  main .section6 .wrapper .container .blocks div .year,
+  main .section6 .wrapper .container .blocks div .branding {
+    font-size: 0.8rem;
+  }
+  main .section6 .wrapper .container .blocks div .brand {
+    font-size: 2.2rem;
+    font-weight: 300;
+  }
+  main .section7 {
+    padding: 2rem 4rem;
+  }
+  main .section7 .container {
+    width: 100%;
+  }
+  main .section7 .container .top {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .section7 .container .top .left {
+    width: 50%;
+  }
+  main .section7 .container .top .left h1 {
+    font-size: 8rem;
+  }
+  main .section7 .container .top .right {
+    width: 50%;
+  }
+  main .section7 .container .top .right p {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    word-spacing: 0.5rem;
+  }
+  main .section7 .container .bottom {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  main .section7 .container .bottom .card span p {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  main .section7 .container .bottom .card p {
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.5rem;
+  }
+  main .section8 {
+    padding: 2rem 4rem;
+  }
+  main .section8 .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  main .section8 .wrapper .empty {
+    width: 50%;
+  }
+  main .section8 .wrapper .container {
+    width: 50%;
+  }
+  main .section8 .wrapper .container .box {
+    gap: 0.5rem;
+  }
+  main .section8 .wrapper .container .box p {
+    font-size: 0.8rem;
+  }
+  main .section8 .wrapper .container .box h2 {
+    font-size: 4rem;
+  }
+  main .section9 {
+    gap: unset;
+    padding: 4rem 2rem;
+  }
+  main .section9 h1 {
+    font-size: 14rem;
+  }
+  main .section9 h2 {
+    font-size: 5rem;
+  }
+  main .section9 button {
+    font-size: 1rem;
+  }
+  main footer .wrapper .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main footer .wrapper .container .image {
+    width: 45%;
+  }
+  main footer .wrapper .container .blocks h3 {
+    font-size: 1rem;
+  }
+  main footer .wrapper .container .blocks p {
+    font-size: 0.9rem;
+  }
+  main footer .wrapper .icons {
+    justify-content: flex-start;
+    flex-direction: unset;
+  }
+  main footer .wrapper .icons i {
+    width: unset;
+    font-size: 1rem;
+  }
+  main footer .wrapper .terms {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main footer .wrapper .terms p {
+    font-size: 0.8rem;
+    text-align: left;
+    width: 65%;
+  }
+}
